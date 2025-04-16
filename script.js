@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const urlParts = {
         getFullUrl: function() {
-            return 'https://docs.google.com/spreadsheets/d/1YsSRDrBIbb7UCGAHA-XnblmcEQ_YOT-dnq1HFXJ-7J4/edit?gid=1674447448#gid=1674447448&output=csv';
+            return 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQcK_0NeFjn1-_aV1c9o4rFVDr7VvhYIBnwqTwsW0yY64x2sSErdTIeLOWLqI-2I3ZMvAx-ZoCmWtZE/pubhtml?gid=1674447448&single=true';
         }
     };
 
