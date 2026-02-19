@@ -292,6 +292,22 @@ document.addEventListener('DOMContentLoaded', function() {
         </span>
     `).join('')}
 </div>
+
+         ${shoe.sizes.map(size => `
+    <span class="size-badge">
+        ${size.size}
+        <span class="size-quantity">(${size.quantity})</span>
+    </span>
+`).join('')}
+</div>  <!-- fecha sizes-container -->
+
+<!-- BOTÕES AQUI -->
+<div class="buy-buttons">
+    <button class="buy-btn primary">Comprar</button>
+    <button class="buy-btn secondary">Reservar</button>
+</div>
+
+</div>  <!-- fecha shoe-info -->
                 </div>
             `;
             shoeGrid.appendChild(shoeCard);
@@ -566,6 +582,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Start the app
     init();
 });
+
 
 
 
