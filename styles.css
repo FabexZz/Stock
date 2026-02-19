@@ -570,57 +570,11 @@ footer {
     z-index: 1001;
 }
 
-.buy-buttons {
-    display: flex;
-    gap: 10px;
-    margin-top: auto;
-    padding-top: 15px;
-    flex-shrink: 0;
-}
-
-.buy-btn {
-    flex: 1;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 0.95rem;
-    cursor: pointer;
-    transition: all 0.2s;
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-}
-
-.buy-btn.primary {
-    background-color: #10b981; /* VERDE */
-    color: white;
-}
-
-.buy-btn.primary:hover {
-    background-color: #059669;
-}
-
-.buy-btn.secondary {
-    background-color: #6b7280; /* CINZENTO */
-    color: white;
-}
-
-.buy-btn.secondary:hover {
-    background-color: #4b5563;
-}
-
-.sizes-label {
-    font-size: 0.85rem;
-    color: var(--secondary);
-    margin-bottom: 6px;
-    font-weight: 500;
-}
-
 .close-btn:hover {
     color: #ccc;
 
 }
+
 
 
 
