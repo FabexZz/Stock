@@ -303,7 +303,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <!-- BOTÕES AQUI -->
 <div class="buy-buttons">
-    <button class="buy-btn primary">Comprar</button>
+    <a href="https://wa.me/351962163690?text=Quero comprar: ${encodeURIComponent(shoe.name)} - ${shoe.price} - SKU: ${shoe.sku}" class="buy-btn primary" target="_blank">Comprar</a>
     <button class="buy-btn secondary">Reservar</button>
 </div>
 
@@ -582,6 +582,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Start the app
     init();
 });
+
 
 
 
