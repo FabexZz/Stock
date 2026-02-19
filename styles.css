@@ -350,9 +350,6 @@ header h1 {
 
 .sizes-container {
     margin-top: 10px;
-    display: flex !important;
-    flex-wrap: wrap;
-    gap: 8px;
 }
 
 #loading {
@@ -561,6 +558,7 @@ footer {
     color: #ccc;
 
 }
+
 
 
 
