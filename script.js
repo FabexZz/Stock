@@ -283,23 +283,16 @@ document.addEventListener('DOMContentLoaded', function() {
     <span class="current-price">${shoe.price}</span>
     <span class="original-price">${shoe.retail}</span>
 </div>
-<div class="sizes-container">
-<p class="sizes-label">${translations[currentLanguage].availableSizes}</p>
-<div class="sizes-list">
-    ${shoe.sizes.map(size => `
-        <span class="size-badge">
-            ${size.size}<span class="size-qty">(${size.quantity})</span>
-        </span>
-    `).join('')}
-</div>
-</div>
-
-         ${shoe.sizes.map(size => `
-    <span class="size-badge">
-        ${size.size}
-        <span class="size-quantity">(${size.quantity})</span>
-    </span>
-`).join('')}
+                    <div class="sizes-container">
+                        <p>${translations[currentLanguage].availableSizes}</p>
+                        ${shoe.sizes.map(size => `
+                            <span class="size-badge">
+                                ${size.size}
+                                <span class="size-quantity">(${size.quantity})</span>
+                            </span>
+                        `).join('')}
+                    </div>
+                </div>
             `;
             shoeGrid.appendChild(shoeCard);
             
@@ -573,6 +566,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Start the app
     init();
 });
+
 
 
 
