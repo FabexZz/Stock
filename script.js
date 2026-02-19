@@ -300,16 +300,6 @@ document.addEventListener('DOMContentLoaded', function() {
         <span class="size-quantity">(${size.quantity})</span>
     </span>
 `).join('')}
-</div>  <!-- fecha sizes-container -->
-
-<!-- BOTÕES AQUI -->
-<div class="buy-buttons">
-    <a href="https://wa.me/351962163690?text=Quero comprar: ${encodeURIComponent(shoe.name)} - ${shoe.price} - SKU: ${shoe.sku}" class="buy-btn primary" target="_blank">Comprar</a>
-    <button class="buy-btn secondary">Reservar</button>
-</div>
-
-</div>  <!-- fecha shoe-info -->
-                </div>
             `;
             shoeGrid.appendChild(shoeCard);
             
@@ -583,6 +573,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Start the app
     init();
 });
+
 
 
 
