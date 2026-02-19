@@ -279,7 +279,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p>SKU: ${shoe.sku}</p>
 <div class="price">
     <span class="current-price">${shoe.price}</span>
-    <span class="original-price">€120,00</span>
+    <span class="original-price">${shoe.retail}</span>
 </div>
 <div class="sizes-container">
     <p>${translations[currentLanguage].availableSizes}</p>
@@ -564,4 +564,5 @@ document.addEventListener('DOMContentLoaded', function() {
     // Start the app
     init();
 });
+
 
