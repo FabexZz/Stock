@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('loading').style.display = 'none';
     }
 
-  function displayShoes(shoes) {
+function displayShoes(shoes) {
     const shoeGrid = document.getElementById('shoe-grid');
     shoeGrid.innerHTML = '';
     
@@ -294,23 +294,20 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         `;
         shoeGrid.appendChild(shoeCard);
-        // ... resto do código lightbox continua igual
+
+        // lightbox click
+        shoeCard.querySelector('.shoe-image').addEventListener('click', function() {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const caption = document.querySelector('.lightbox-caption');
+            
+            lightbox.style.display = 'block';
+            lightboxImg.src = this.src;
+            lightboxImg.classList.remove('zoomed');
+            caption.textContent = this.alt;
+        });
     });
 }
-            shoeGrid.appendChild(shoeCard);
-            
-            shoeCard.querySelector('.shoe-image').addEventListener('click', function() {
-                const lightbox = document.getElementById('lightbox');
-                const lightboxImg = document.getElementById('lightbox-img');
-                const caption = document.querySelector('.lightbox-caption');
-                
-                lightbox.style.display = 'block';
-                lightboxImg.src = this.src;
-                lightboxImg.classList.remove('zoomed');
-                caption.textContent = this.alt;
-            });
-        });
-    }
 
     function closeLightbox() {
         const lightbox = document.getElementById('lightbox');
@@ -569,6 +566,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Start the app
     init();
 });
+
 
 
 
