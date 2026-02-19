@@ -339,8 +339,6 @@ header h1 {
     padding: 6px 12px;
     border-radius: 20px;
     font-size: 0.85rem;
-    margin-right: 6px;
-    margin-bottom: 6px;
     font-weight: 500;
 }
 
@@ -352,6 +350,10 @@ header h1 {
 
 .sizes-container {
     margin-top: 10px;
+    display: flex;       
+    flex-wrap: wrap;     
+    gap: 6px;            
+    align-items: center;
 }
 
 #loading {
@@ -600,6 +602,7 @@ footer {
     color: #ccc;
 
 }
+
 
 
 
