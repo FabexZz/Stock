@@ -351,9 +351,21 @@ header h1 {
 .sizes-container {
     margin-top: 10px;
     display: flex;       
-    flex-wrap: wrap;     
-    gap: 6px;            
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    scrollbar-width: thin; 
+    gap: 6px;        
     align-items: center;
+}
+
+.sizes-container::-webkit-scrollbar {
+    height: 4px; /* ← scrollbar fina (Chrome/Safari) */
+}
+
+.sizes-container::-webkit-scrollbar-thumb {
+    background-color: #d1d5db;
+    border-radius: 2px;
 }
 
 #loading {
@@ -602,6 +614,7 @@ footer {
     color: #ccc;
 
 }
+
 
 
 
