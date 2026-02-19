@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
             availableSizes: "Available Sizes:",
             noResults: "No matching sneakers found",
             loading: "Loading inventory...",
-            error: "Error loading inventory. Please try again later and contact the owner",
+            error: "Error loading stock. Please try again later and let me know via whatsapp, thanks",
             retry: "Retry",
             reset: "Reset Filters",
             footer: "Sneaker Inventory"
@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
             filterSize: "Filtrar por Tamanho",
             availableSizes: "Tamanhos Disponíveis:",
             noResults: "Nenhum tênis encontrado",
-            loading: "Carregando estoque...",
-            error: "Erro ao carregar estoque. Por favor tente novamente mais tarde e contacte o dono.",
+            loading: "Carregando stock...",
+            error: "Erro ao carregar o stock. Por favor tente novamente mais tarde e avise-me pelo whatsapp, obrigado.",
             retry: "Tentar novamente",
             reset: "Redefinir Filtros",
             footer: "Sneaker Inventory"
@@ -566,6 +566,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Start the app
     init();
 });
+
 
 
 
