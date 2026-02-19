@@ -291,6 +291,19 @@ header h1 {
     color: #2563eb;
 }
 
+.current-price {
+    font-weight: 700;
+    color: #2563eb;
+    margin-right: 6px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #9ca3af;
+    font-weight: 400;
+    font-size: 0.95rem;
+}
+
 .sort-controls {
     margin: 4px 0;
     display: flex;
@@ -544,4 +557,5 @@ footer {
 
 .close-btn:hover {
     color: #ccc;
+
 }
