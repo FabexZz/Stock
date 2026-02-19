@@ -555,8 +555,23 @@ footer {
     z-index: 1001;
 }
 
+.buy-btn {
+    flex: 1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;      /* ← adiciona isto */
+    display: inline-block;      /* ← adiciona isto */
+    text-align: center;         /* ← para centralizar texto */
+}
+
 .close-btn:hover {
     color: #ccc;
 
 }
+
 
