@@ -257,43 +257,46 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('loading').style.display = 'none';
     }
 
-    function displayShoes(shoes) {
-        const shoeGrid = document.getElementById('shoe-grid');
-        shoeGrid.innerHTML = '';
-        
-        if (shoes.length === 0) {
-            document.getElementById('no-results').style.display = 'flex';
-            return;
-        }
-        
-        document.getElementById('no-results').style.display = 'none';
-        
-        shoes.forEach(shoe => {
-            const shoeCard = document.createElement('div');
-            shoeCard.className = 'shoe-card';
-            shoeCard.innerHTML = `
-                <div class="shoe-image-container">
-                    <img src="${shoe.image}" alt="${shoe.name}" class="shoe-image" 
-                        onerror="this.src='https://via.placeholder.com/300x200?text=Image+Not+Available'">
+  function displayShoes(shoes) {
+    const shoeGrid = document.getElementById('shoe-grid');
+    shoeGrid.innerHTML = '';
+    
+    if (shoes.length === 0) {
+        document.getElementById('no-results').style.display = 'flex';
+        return;
+    }
+    
+    document.getElementById('no-results').style.display = 'none';
+    
+    shoes.forEach(shoe => {
+        const shoeCard = document.createElement('div');
+        shoeCard.className = 'shoe-card';
+        shoeCard.innerHTML = `
+            <div class="shoe-image-container">
+                <img src="${shoe.image}" alt="${shoe.name}" class="shoe-image" 
+                    onerror="this.src='https://via.placeholder.com/300x200?text=Image+Not+Available'">
+            </div>
+            <div class="shoe-info">
+                <h2>${shoe.name}</h2>
+                <p>SKU: ${shoe.sku}</p>
+                <div class="price">
+                    <span class="current-price">${shoe.price}</span>
+                    <span class="original-price">${shoe.retail}</span>
                 </div>
-                <div class="shoe-info">
-                    <h2>${shoe.name}</h2>
-                    <p>SKU: ${shoe.sku}</p>
-<div class="price">
-    <span class="current-price">${shoe.price}</span>
-    <span class="original-price">${shoe.retail}</span>
-</div>
-                    <div class="sizes-container">
-                        <p>${translations[currentLanguage].availableSizes}</p>
-                        ${shoe.sizes.map(size => `
-                            <span class="size-badge">
-                                ${size.size}
-                                <span class="size-quantity">(${size.quantity})</span>
-                            </span>
-                        `).join('')}
-                    </div>
+                <div class="sizes-container">
+                    ${shoe.sizes.map(size => `
+                        <span class="size-badge">
+                            ${size.size}
+                            <span class="size-quantity">(${size.quantity})</span>
+                        </span>
+                    `).join('')}
                 </div>
-            `;
+            </div>
+        `;
+        shoeGrid.appendChild(shoeCard);
+        // ... resto do código lightbox continua igual
+    });
+}
             shoeGrid.appendChild(shoeCard);
             
             shoeCard.querySelector('.shoe-image').addEventListener('click', function() {
@@ -566,6 +569,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Start the app
     init();
 });
+
 
 
 
