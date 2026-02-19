@@ -284,13 +284,15 @@ document.addEventListener('DOMContentLoaded', function() {
     <span class="original-price">${shoe.retail}</span>
 </div>
 <div class="sizes-container">
-    <p>${translations[currentLanguage].availableSizes}</p>
+<div class="sizes-label">${translations[currentLanguage].availableSizes}</div>
+<div class="sizes-container">
     ${shoe.sizes.map(size => `
         <span class="size-badge">
             ${size.size}
             <span class="size-quantity">(${size.quantity})</span>
         </span>
     `).join('')}
+</div>
 </div>
 
          ${shoe.sizes.map(size => `
@@ -582,6 +584,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Start the app
     init();
 });
+
 
 
 
