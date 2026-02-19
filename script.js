@@ -245,10 +245,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function formatPrice(price) {
-       if (!price) return 'N/A';
-         let formatted = price.includes(',') ? 
-           price.replace(',', '.') : price;
-         return `€${formatted.replace('€', '').trim()}`;
+    if (!price) return 'N/A';
+    let formatted = price.replace(',', '.').replace('.', ',').replace('€', '').trim();
+    return `${formatted}€`;
 
     }
 
@@ -567,6 +566,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Start the app
     init();
 });
+
 
 
 
