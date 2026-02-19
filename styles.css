@@ -559,8 +559,8 @@ footer {
 .buy-buttons {
     display: flex;
     gap: 10px;
-    margin-top: 15px;
-    padding-top: 20px;
+    margin-top: auto;
+    padding-top: 15px;
     flex-shrink: 0;
 }
 
@@ -600,6 +600,7 @@ footer {
     color: #ccc;
 
 }
+
 
 
 
