@@ -610,10 +610,18 @@ footer {
     background-color: #4b5563;
 }
 
+.sizes-label {
+    font-size: 0.85rem;
+    color: var(--secondary);
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
 .close-btn:hover {
     color: #ccc;
 
 }
+
 
 
 
