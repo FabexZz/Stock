@@ -214,6 +214,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     sku: shoe.SKU || '-',
                     image: getValidImageUrl(shoe.image_url),
                     price: formatPrice(shoe['Price + ship']),
+                    retail: formatPrice(shoe.Retail),
                     sizes: []
                 };
             }
@@ -564,5 +565,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Start the app
     init();
 });
+
 
 
