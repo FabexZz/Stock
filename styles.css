@@ -92,7 +92,7 @@ header h1 {
     left: 15px;
     top: 50%;
     transform: translateY(-50%);
-    color: var(--secondary);
+    color: #6b7280;
 }
 
 .filters input {
@@ -400,11 +400,11 @@ padding: 18px 20px 16px;
 }
 
 footer {
-    margin-top: 50px;
-    padding: 25px 0;
-    border-top: 1px solid var(--border);
-    color: var(--secondary);
-    font-size: 0.9rem;
+    margin-top: 40px;
+    padding: 20px 0;
+    border-top: 1px solid #1f2937;
+    color: #6b7280;
+    font-size: 0.75rem;
     text-align: center;
 }
 
@@ -554,6 +554,7 @@ footer {
     color: #ccc;
 
 }
+
 
 
 
