@@ -41,6 +41,7 @@ header {
 }
 
 header h1 {
+    color: #2563eb !important;
     font-size: 1.8rem;
     letter-spacing: 0.3em;
     text-align: center;
@@ -555,6 +556,7 @@ footer {
     color: #ccc;
 
 }
+
 
 
 
