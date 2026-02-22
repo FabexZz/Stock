@@ -74,17 +74,22 @@ header h1 {
 }
 
 .filters {
-    background: rgba(7, 11, 18, 0.9) !important; 
-    border-radius: 999px !important; 
-    padding: 10px 16px !important;
-    gap: 10px 18px !important; 
-    box-shadow: 0 16px 40px rgba(0,0,0,0.45) !important; 
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(37,99,235,0.2);
+    display: flex !important;
+    align-items: center !important;
+    background: rgba(7, 11, 18, 0.9) !important;
+    border-radius: 50px !important; 
+    padding: 12px 20px !important;
+    gap: 0 16px !important;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(37,99,235,0.3) !important;
+    width: fit-content !important; 
+    margin: 0 auto !important; 
 }
 
 .search-box {
-    flex: 1;
+    flex: 1 !important;
+    min-width: 250px !important; 
 }
 
 .search-box i {
@@ -96,10 +101,13 @@ header h1 {
 }
 
 .filters input {
-    background: rgba(0,0,0,0.3) !important;
-    border-radius: 999px !important;
-    border: 1px solid rgba(55,65,81,0.5) !important;
-    padding-left: 40px !important;
+    margin: 0 !important;
+    width: 100% !important;
+    background: rgba(0,0,0,0.4) !important;
+    border-radius: 50px !important;
+    border: none !important;
+    padding: 12px 20px 12px 45px !important;
+    height: 44px !important;
 }
 
 .filters input:focus {
@@ -548,6 +556,7 @@ footer {
     color: #ccc;
 
 }
+
 
 
 
