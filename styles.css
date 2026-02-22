@@ -21,6 +21,9 @@ body {
 }
 
 .container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
@@ -28,6 +31,8 @@ body {
 }
 
 .header-content {
+    width: 100% !important;
+    margin-bottom: 20px !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,6 +80,8 @@ header h1 {
 }
 
 .filters {
+    width: fit-content !important;
+    margin: 0 auto !important; 
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -554,14 +561,21 @@ footer {
 }
 
 .header-section {
-    text-align: center;
-    margin-bottom: 30px;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    max-width: 800px !important;
+    margin: 0 auto 40px auto !important; /* Centraliza horizontalmente */
+    padding: 20px !important;
 }
 
 .close-btn:hover {
     color: #ccc;
 
 }
+
 
 
 
