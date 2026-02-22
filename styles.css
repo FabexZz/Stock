@@ -35,9 +35,10 @@ body {
 }
 
 header {
-    background: transparent;
-    color: #f9fafb;
-    padding: 20px 0 10px;
+    background: rgba(7, 11, 18, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 header h1 {
@@ -73,13 +74,13 @@ header h1 {
 }
 
 .filters {
-    background: rgba(15, 23, 42, 0.9);
-    border-radius: 999px;
-    padding: 10px 16px;
-    display: flex;
-    align-items: center;
-    gap: 10px 18px;
-    box-shadow: 0 16px 40px rgba(0,0,0,0.45);
+    background: rgba(7, 11, 18, 0.9) !important; 
+    border-radius: 999px !important; 
+    padding: 10px 16px !important;
+    gap: 10px 18px !important; 
+    box-shadow: 0 16px 40px rgba(0,0,0,0.45) !important; 
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(37,99,235,0.2);
 }
 
 .search-box {
@@ -95,10 +96,10 @@ header h1 {
 }
 
 .filters input {
-    background: transparent;
-    border-radius: 999px;
-    border: 1px solid #374151;
-    color: #e5e7eb;
+    background: rgba(0,0,0,0.3) !important;
+    border-radius: 999px !important;
+    border: 1px solid rgba(55,65,81,0.5) !important;
+    padding-left: 40px !important;
 }
 
 .filters input:focus {
@@ -112,17 +113,8 @@ header h1 {
 }
 
 .filter-toggle-btn {
-    background-color: var(--accent);
-    color: white;
-    border: none;
-    padding: 12px 15px;
-    border-radius: 6px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-weight: 500;
-    transition: background-color 0.2s;
+    border-radius: 999px !important;
+    padding: 12px 20px !important;
 }
 
 .filter-toggle-btn:hover {
@@ -556,6 +548,7 @@ footer {
     color: #ccc;
 
 }
+
 
 
 
