@@ -60,13 +60,17 @@ header h1 {
     right: 0;
     display: flex;
     gap: 5px;
+    /* Fundo da barra cinza onde ficam os botões EN/PT */
+    background: rgba(7, 11, 18, 0.1);  /* muda esta cor */
+    padding: 8px 12px;
+    border-radius: 8px;
 }
 
 .lang-btn {
     padding: 5px 10px;
     background-color: transparent;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid #ccc;             /* borda dos botões */
+    color: #333;                        /* texto dos botões */
     border-radius: 4px;
     cursor: pointer;
     font-size: 0.8rem;
@@ -574,6 +578,7 @@ footer {
     color: #ccc;
 
 }
+
 
 
 
