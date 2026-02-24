@@ -89,7 +89,8 @@ header h1 {
     margin: 0 auto !important; 
     display: inline-flex !important;
     align-items: center !important;
-    justify-content: space-between !important;  /* Muda aqui: pesquisa esquerda, botões direita */
+    justify-content: space-between !important;
+    flex-direction: row-reverse !important;  /* Inverte ordem: botões ESQUERDA, input DIREITA */
     background: rgba(7, 11, 18, 0.95) !important;
     border-radius: 50px !important;
     padding: 12px 24px !important;
@@ -103,15 +104,15 @@ header h1 {
 .search-box {
     flex: 1 !important;
     max-width: 350px !important;
-    order: 1 !important;  /* Pesquisa primeiro */
+    order: 1 !important;  /* Pesquisa no fim (direita com reverse) */
 }
 
-.filter-toggle-btn, .sort-btn {  /* Botões de filtro/ordenação */
-    margin-left: auto !important;  /* Empurra para direita */
-    order: 2 !important;           /* Depois da pesquisa */
+.filter-toggle-btn, .sort-btn {
+    order: 2 !important;  /* Botões no início (esquerda com reverse) */
     white-space: nowrap !important;
 }
 
+/* Resto mantém igual */
 .search-box i {
     position: absolute;
     left: 15px;
@@ -587,6 +588,7 @@ footer {
     color: #ccc;
 
 }
+
 
 
 
