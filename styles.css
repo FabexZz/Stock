@@ -102,9 +102,10 @@ header h1 {
 }
 
 .search-box {
+    position: relative !important;
     flex: 1 !important;
-    max-width: 500px !important;  /* Aumenta largura */
-    min-width: 400px !important;  /* Largura mínima garantida */
+    max-width: 400px !important;  /* Aumenta largura */
+    min-width: 300px !important;  /* Largura mínima garantida */
     order: 1 !important;          /* Pesquisa no fim (direita com reverse) */
 }
 
@@ -116,10 +117,11 @@ header h1 {
 /* Resto mantém igual */
 .search-box i {
     position: absolute;
-    left: 15px;
+    left: 18px;
     top: 50%;
     transform: translateY(-50%);
     color: #6b7280;
+    pointer-events: none !important;
 }
 
 .filters input {
@@ -130,6 +132,7 @@ header h1 {
     height: 52px !important;                  /* Altura maior */
     font-size: 17px !important;               /* Texto maior */
     width: 100% !important;
+    position: relative !important;
 }
 
 .filters input:focus {
@@ -589,6 +592,7 @@ footer {
     color: #ccc;
 
 }
+
 
 
 
