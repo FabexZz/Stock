@@ -117,7 +117,7 @@ header h1 {
 /* Resto mantém igual */
 .search-box i {
     position: absolute;
-    left: 18px;
+    left: 16px;
     top: 50%;
     transform: translateY(-50%);
     color: #6b7280;
@@ -592,6 +592,7 @@ footer {
     color: #ccc;
 
 }
+
 
 
 
