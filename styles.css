@@ -14,10 +14,8 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
     font-family: 'Inter', sans-serif;
-    background-color: #ffffff; 
+    background-color: #ffffff;
     color: #f9fafb;
     line-height: 1.6;
 }
@@ -577,6 +575,7 @@ footer {
     color: #ccc;
 
 }
+
 
 
 
