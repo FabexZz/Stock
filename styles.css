@@ -103,8 +103,9 @@ header h1 {
 
 .search-box {
     flex: 1 !important;
-    max-width: 350px !important;
-    order: 1 !important;  /* Pesquisa no fim (direita com reverse) */
+    max-width: 500px !important;  /* Aumenta largura */
+    min-width: 400px !important;  /* Largura mínima garantida */
+    order: 1 !important;          /* Pesquisa no fim (direita com reverse) */
 }
 
 .filter-toggle-btn, .sort-btn {
@@ -125,9 +126,9 @@ header h1 {
     background: rgba(0,0,0,0.5) !important;
     border-radius: 40px !important;
     border: none !important;
-    padding: 14px 20px 14px 45px !important;
-    height: 44px !important;
-    font-size: 16px;
+    padding: 16px 24px 16px 50px !important;  /* Mais padding horizontal/vertical */
+    height: 52px !important;                  /* Altura maior */
+    font-size: 17px !important;               /* Texto maior */
     width: 100% !important;
 }
 
@@ -588,6 +589,7 @@ footer {
     color: #ccc;
 
 }
+
 
 
 
