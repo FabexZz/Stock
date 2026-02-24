@@ -32,16 +32,6 @@ body {
     padding: 20px 40px 40px;
 }
 
-.header-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;       /* centra o título e filtros */
-    justify-content: center;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 40px auto; /* centra horizontalmente */
-}
-
 .header-content {
     width: 100%;
     margin-bottom: 20px;
@@ -587,6 +577,7 @@ footer {
     color: #ccc;
 
 }
+
 
 
 
