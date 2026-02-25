@@ -133,6 +133,7 @@ header h1 {
     font-size: 17px !important;               /* Texto maior */
     width: 100% !important;
     position: relative !important;
+    color: #f9fafb !important;
 }
 
 .filters input:focus {
@@ -592,6 +593,7 @@ footer {
     color: #ccc;
 
 }
+
 
 
 
